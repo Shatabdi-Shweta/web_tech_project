@@ -16,13 +16,15 @@
 
     function createUser($user){
         $conn = dbConnection();
-        $sql = "insert into users values ('','{$user['username']}','{$user['password']}','{$user['email']}')";
-
-        if(mysqli_query($conn,$sql)){
-            header('location: ../view/login.php');
-        }else{
-            echo 'Error!';
-        }
+        $sql = "insert into users values ('','{$user['user_type']}','{$user['username']}','{$user['email']},'{$user['password']}')";
+        $result = mysqli_query($conn,$sql);
+        // $count = mysqli_num_rows($result);
+        // if($count == 1){
+        //     header('location: ../view/login.php');
+        // }else{
+        //     echo 'Error!';
+        // }
+        echo $result;
     }
     
 

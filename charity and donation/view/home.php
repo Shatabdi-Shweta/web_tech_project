@@ -13,8 +13,6 @@
 </head>
 <body>
     <h1>Welcome Home! </h1> 
-    <a href="userlist.php">User List </a>  |
-    <a href="createUser.php">Create New User </a>  |
     <a href="logout.php">logout </a>   
 </body>
 </html>

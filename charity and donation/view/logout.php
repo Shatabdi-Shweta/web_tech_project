@@ -1,5 +1,5 @@
 <?php
 
     setcookie('flag','true',time()-10,'/');
-    header('location:login.php;')
+    header('location:login.php');
 ?>

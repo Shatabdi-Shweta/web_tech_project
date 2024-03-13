@@ -12,7 +12,6 @@
         <td>
           <fieldset>
             <legend><h3>REGISTRATION</h3></legend>
-            Id<br /><input type="text" name="id" value="" /><br />
             Password<br /><input
               type="password"
               name="password"
@@ -23,7 +22,8 @@
               name="confirm_password"
               value=""
             /><br />
-            Name<br /><input type="text" name="name" value="" /><br />
+            Name<br /><input type="text" name="username" value="" /><br />
+            Email<br /><input type="email" name="email" value="" /><br />
             User Type
             <hr />
             <input type="radio" name="user-type" value="User" />User
