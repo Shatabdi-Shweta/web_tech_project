@@ -5,12 +5,11 @@
     $description = $_REQUEST["description"];
     $category = $_REQUEST["category"];
     $owner ="admin";
-    function addResource($resource_title,$thumbnail,$description,$category,$owner){
-        if($resource_title = "" || $thumbnail = "" || $description = "" || $category = "" || $owner = ""){
-            echo "required each field";
-        }else{
-            $result = add_request_resource($resource_title,$thumbnail,$description,$category,$owner);
-            header('location:resource.php');
-        }
+    
+    if($resource_title == "" || $thumbnail == "" || $description == "" || $category == "" || $owner == ""){
+        echo "required each field";
+    }else{
+        add_request_resource($resource_title,$thumbnail,$description,$category,$owner);
+        header('location:../view/resource.php');
     }
 ?>
