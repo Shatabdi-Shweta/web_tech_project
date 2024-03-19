@@ -12,9 +12,6 @@
         <td>
           <fieldset>
             <legend><h3>REGISTRATION</h3></legend>
-  
-            Name<br /><input type="text" name="username" value="" /><br />
-            Email<br /><input type="email" name="email" value="" /><br />
             Password<br /><input
               type="password"
               name="password"
@@ -25,15 +22,15 @@
               name="confirm_password"
               value=""
             /><br />
+            Name<br /><input type="text" name="username" value="" /><br />
+            Email<br /><input type="email" name="email" value="" /><br />
             User Type
             <hr />
-            <input type="radio" name="user-type" value="Donor" />Donor
+            <input type="radio" name="user-type" value="User" />User
             <input type="radio" name="user-type" value="Admin" />Admin
-            <input type="radio" name="user-type" value="Volunteer"/>Volunteer
-            <input type="radio" name="user-type" value="User"/>User
             <hr />
             <input type="submit" name="submit" value="Sign Up" />
-            <p>already have and account? <a href="login.php">login here</a>
+            <a href="login.php">Sign In</a>
           </fieldset>
         </td>
       </tr>

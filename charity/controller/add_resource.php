@@ -13,7 +13,7 @@
             echo "required each field";
         }else{
             $result = add_request_resource($resource_title,$thumbnail,$description,$category,$owner);
-            header('location:../view/addresource.php');
+            header('location:../view/resource.php');
         }
     }
 

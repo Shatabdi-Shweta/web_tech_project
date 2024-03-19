@@ -7,7 +7,7 @@
     $username=$_REQUEST['username'];
     $password=$_REQUEST['password'];
 
-    if($username == " " || $password == " " || $username == "" || $password == ""){
+    if($username ==" " || $password ==" " || $username == "" || $password == ""){
         echo "required username or password";
     }
     

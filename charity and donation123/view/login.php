@@ -11,7 +11,6 @@
         Username:<input type="text" name="username" value=""><br>
         Password:<input type="password" name="password" value=""><br>
                 <input type="submit" name="submit" value="submit">
-        <p>Don't have and accout? <a href="signup.php">Sign up now</a></p>        
     </form>
 </body>
 </html>

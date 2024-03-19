@@ -1,3 +1,7 @@
+<?php 
+    require_once '../controller/sessionCheck.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +17,7 @@
        <a href="donorslist.php">Donor Details</a><br>
        <input type="radio" name="campaign_performance" id="campaign_performance" value="campaign_performance">
        <a href="campaignList.php">Campaign Performance</a>  
-    </form><br>
-    <a href="home.php"><button>Return Home</button></a>
+    </form>
+
 </body>
 </html>

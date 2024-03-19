@@ -16,21 +16,16 @@
 
     function createUser($user){
         $conn = dbConnection();
-        $sql = "select * from users where name = '{$user['username']}'";
-        $result = mysqli_query($conn, $sql);
-    
-        $count = mysqli_num_rows($result);
-        if($count == 1){
-            echo "user already exist..";
-        }else{
-            $sql = "insert into users values ('','{$user['user_type']}','{$user['username']}','{$user['email']}','{$user['password']}')";
-        if($result) {
+        $sql = "insert into users values ('','{$user['user_type']}','{$user['username']}','{$user['email']}','{$user['password']}')";
+        
+        if(mysqli_query($conn, $sql)) {
             return true;
         }else{
             return false;
         }
-        }
-        
     }
-       
+    
+
+    
+
 ?>
