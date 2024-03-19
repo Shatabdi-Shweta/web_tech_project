@@ -17,7 +17,13 @@
     function createUser($user){
         $conn = dbConnection();
         $sql = "insert into users values ('','{$user['user_type']}','{$user['username']}','{$user['email']}','{$user['password']}')";
-        
+        // $result = mysqli_query($conn,$sql);
+        // $count = mysqli_num_rows($result);
+        // if($count == 1){
+        //     header('location: ../view/login.php');
+        // }else{
+        //     echo 'Error!';
+        // }
         if(mysqli_query($conn, $sql)) {
             return true;
         }else{
@@ -26,6 +32,14 @@
     }
     
 
-    
-
+    function getAllUser(){
+        $conn = dbConnection();
+        $sql = "select * from users";
+        $result = mysqli_query($conn,$sql);
+        $users = [];
+        while($row = mysqli_fetch_assoc($result)){
+            array_push ($users,$row);
+        }
+        return $users;
+    }
 ?>

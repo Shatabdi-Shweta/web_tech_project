@@ -9,10 +9,7 @@
 
     if($username ==" " || $password ==" " || $username == "" || $password == ""){
         echo "required username or password";
-    }
-    if
-    
-    else{
+    }else{
 
         $status=login($username,$password);
         if($status){

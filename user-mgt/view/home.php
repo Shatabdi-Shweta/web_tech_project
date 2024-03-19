@@ -13,8 +13,8 @@
 </head>
 <body>
     <h1>Welcome Home! </h1> 
-    <a href="resource.php">Educational resources</a>  <br> 
-    <a href="reportingAndAnalytics.php">Report and Analytics</a><br>
-    <a href="logout.php">logout </a>
+    <a href="userlist.php">User List </a>  |
+    <a href="createUser.php">Create New User </a>  |
+    <a href="logout.php">logout </a>   
 </body>
 </html>

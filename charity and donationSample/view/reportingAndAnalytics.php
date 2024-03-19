@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report and Analytics</title>
+</head>
+<body>
+
+    <h2>Report and Analytics</h2>
+    <form action="add_report.php" method="post">
+        <input type="radio" name="donor_details" id="donor_details" value="donor_details">
+       <a href="donorsList.php">Donor Details</a><br>
+       <input type="radio" name="campaign_performance" id="campaign_performance" value="campaign_performance">
+       <a href="campaign_performance">Campaign Performance</a>  
+    </form>
+
+</body>
+</html>
