@@ -4,16 +4,16 @@
 
     require_once('../model/usermodel.php');
 
-    $username=$_REQUEST['username'];
+    $name=$_REQUEST['name'];
     $password=$_REQUEST['password'];
 
-    if($username ==" " || $password ==" " || $username == "" || $password == ""){
-        echo "required username or password";
+    if($name ==" " || $password ==" " || $name == "" || $password == ""){
+        echo "required name or password";
     }
 
     else{
 
-        $status=login($username,$password);
+        $status=login($name,$password);
         if($status){
             $_SESSION['flag'] = "true";
             setcookie('flag','true',time()+3600,'/');
@@ -22,5 +22,4 @@
             echo "invalid user";
         }
     }
-    
 ?>

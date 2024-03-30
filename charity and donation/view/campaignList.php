@@ -1,4 +1,5 @@
-<?php 
+<?php
+    require_once '../controller/sessionCheck.php';
     include_once('../model/reportAndAnalysisModel.php');
     $campaigns = show_campaign_list();
 ?>
@@ -32,6 +33,7 @@
             </tr>
             <?php
         }?>
+        <a href="home.php"><button>Return Home</button></a>
     </table>
 </body>
 </html>

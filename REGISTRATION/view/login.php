@@ -6,13 +6,13 @@
     <title>Log in form</title>
 </head>
 <body>
-    <form method="get" action="../controller/logInCheck.php" enctype="">
+    <form method="get" action="../controller/loginCheck.php" enctype="">
 
-        Username:<input type="text" name="username" value=""><br>
+        Name:<input type="text" name="name" value=""><br>
         Password:<input type="password" name="password" value=""><br>
                 <input type="submit" name="submit" value="submit">
         
-        <p>Don't have an account? <a href="signup.php">Sign up now</a></p>
+        <p>Don't have an account? <a href="registrationForm.php">Register now</a></p>
     </form>
 </body>
 </html>

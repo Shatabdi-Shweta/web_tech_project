@@ -1,4 +1,5 @@
 <?php
+    require_once '../controller/sessionCheck.php';
     include_once '../controller/educationalResources.php';
 
     $resource = all_resources();
@@ -14,9 +15,13 @@
 <body>
     <a href="addResource.php">Add Educational Resource</a>
     <br><br><br>
+    
+    <!-- Show all educational resources -->
     <?php for($i=0; $i<count($resource); $i++){?>
-        <a href= "viewResource.php?id=<?=$resource[$i]['resource_id']?>"><?=$resource[$i]['resource_title']?></a>
-        <br><br>
+        <img src="<?=$resource[$i]['thumbnail']?>" alt="thumbnail" width="300" height="300">
+        <h2><a href= "viewResource.php?id=<?=$resource[$i]['resource_id']?>"><?=$resource[$i]['resource_title']?></a></h2>
+        <hr>
+        <br>
         
     <?php } ?>
     <a href="home.php"><button>Return Home</button></a>

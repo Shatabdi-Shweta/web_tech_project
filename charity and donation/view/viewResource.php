@@ -1,12 +1,15 @@
 <?php
     include_once '../model/educationalResource.php';
 
+    // which resource to show using GET method
     if (isset($_GET['id'])) {
         $id = $_GET['id'];
     }
 
+    // get that particular resource from database
     $resource = viewResourceForId($id);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

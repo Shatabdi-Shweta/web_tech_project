@@ -12,6 +12,7 @@
         }
     }
 
+    // all resources from database
     function all_resource() {
         $conn = dbConnection();
         $sql = "select * from educational_resources";
@@ -26,6 +27,7 @@
         return $resources;
     }
 
+    // particular resource from database
     function viewResourceForId($id) {
         $conn = dbConnection();
         $sql = "select * from educational_resources where resource_id='{$id}'";
@@ -39,5 +41,4 @@
 
         return $resources;
     }
-    
 ?>

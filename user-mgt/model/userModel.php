@@ -27,13 +27,20 @@ function createUser($user){
 }
 
 function updateUser($user){
+    $conn = dbConnection();
+    $sql = "UPDATE users SET username='{$user['username']}', email='{$user['email']}', password='{$user['password']}' WHERE id={$user['id']}";
 
+    if(mysqli_query($conn, $sql)) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 function getAllUser(){
-    $con = dbConnection();
+    $conn = dbConnection();
     $sql = "select * from users";
-    $result = mysqli_query($con, $sql);
+    $result = mysqli_query($conn, $sql);
     $users= [];
     while($row = mysqli_fetch_assoc($result)){
         array_push($users, $row);
@@ -42,12 +49,23 @@ function getAllUser(){
     return $users;
 }
 
-function getUserByID($id){
-
+function getUserByID($sl){
+    $conn = dbConnection();
+    $sql = "SELECT * FROM users WHERE SL={$sl}";
+    $result = mysqli_query($conn, $sql);
+    $user = mysqli_fetch_assoc($result);
+    return $user;
 }
 
-function deleteUser ($id){
+function deleteUser($sl){
+    $conn = dbConnection();
+    $sql = "DELETE FROM users WHERE SL={$sl}";
 
+    if(mysqli_query($conn, $sql)) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 ?>

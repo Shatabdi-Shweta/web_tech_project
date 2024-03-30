@@ -17,12 +17,14 @@
     }
     
     else {
+        // USD to BDT
         if ($fromCur == "usd" && $toCur == "bdt") {
             $total = $amount * 109.76;
     
             echo "USD to BDT: " . $total;
         }
-    
+        
+        // INR to BDT
         if ($fromCur == "inr" && $toCur == "bdt") {
             $total = $amount * 1.32;
     
