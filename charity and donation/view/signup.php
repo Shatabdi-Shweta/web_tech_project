@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up form</title>
+    <link rel="stylesheet" href="../assets/CSS/style.css">
 </head>
 <body>
   <form method="post" action="../controller/signupCheck.php" enctype="">
+    
     <table border="0" cellspacing="0" cellpadding="0">
       <tr>
         <td>
-          <fieldset>
+          <fieldset class="field">
             <legend><h3>REGISTRATION</h3></legend>
 
             Name<br /><input type="text" name="username" value="" /><br />
@@ -40,6 +42,7 @@
         </td>
       </tr>
     </table>
+    
   </form>
 </body>
 </html>

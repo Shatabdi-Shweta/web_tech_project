@@ -5,11 +5,12 @@
 ?>
 
 <html>
-<head>
-<title>Donorlist</title>
-</head>
+    <head>
+        <title>Donorlist</title>
+        <link rel="stylesheet" href="../assets/CSS/style.css">
+    </head>
 <body>
-
+<fieldset class="field">
 <table border=1>
     <tr>
         <td>Serial</td>
@@ -35,9 +36,10 @@
         </td>
     <tr>
 <?php } ?>
+
+
+</table><br>
 <a href="home.php"><button>Return Home</button></a>
-
-</table>
-
+</fieldset>
 </body>
 </html>

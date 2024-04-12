@@ -12,6 +12,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <link rel="stylesheet" href="../assets/css/index_style.css">
 </head>
 <body>
     <h1>Charity and Donation</h1>
@@ -20,7 +21,7 @@
         <tr>
             <td width="50%">
                 <form action="">
-                    <fieldset>
+                    <fieldset >
                         <legend>Recent Donation</legend>
 
                         <b>Name:</b> <?=$recentDonation[0]['donor_name']?>

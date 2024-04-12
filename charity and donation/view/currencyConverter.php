@@ -8,10 +8,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
+    <link rel="stylesheet" href="../assets/CSS/style.css">
 </head>
 <body>
     <form action="../controller/currencyConverter.php" method="post">
-        <fieldset>
+        <fieldset class="field">
             <legend>Currency Converter</legend>
             From:
             <select name="fromCur">
@@ -32,7 +33,8 @@
     </form>
     <br>
     <h3>Have Any Issue?</h3>
-    <a href="contact.php"><input type="button" value="Contact Support"></a>
+    <a href="contact.php" ><button>Contact Support</button></a>
     <a href="home.php"><button>Return Home</button></a>
+    
 </body>
 </html>

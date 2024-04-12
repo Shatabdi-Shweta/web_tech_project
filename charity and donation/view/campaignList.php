@@ -10,8 +10,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canpaign Performances</title>
+    <link rel="stylesheet" href="../assets/CSS/style.css">
 </head>
 <body>
+    <fieldset class="field">
     <table border=1>
         <tr>
             <td>Serial</td>
@@ -33,7 +35,9 @@
             </tr>
             <?php
         }?>
-        <a href="home.php"><button>Return Home</button></a>
-    </table>
+       
+    </table> <br>
+    <a href="home.php"><button>Return Home</button></a>
+    </fieldset>
 </body>
 </html>

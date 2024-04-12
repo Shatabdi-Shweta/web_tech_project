@@ -16,6 +16,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educational Resource</title>
+    <link rel="stylesheet" href="../assets/CSS/style.css">
 </head>
 <body>
     <h1><?=$resource[0]['resource_title']?></h1>

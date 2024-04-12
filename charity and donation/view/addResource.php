@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educational Resource</title>
+    <link rel="stylesheet" href="../assets/CSS/style.css">
 </head>
 <body>
     <form action="../controller/add_resource.php" method="post" enctype="multipart/form-data">
-        <fieldset>
+        <fieldset class="field">
             <legend>Add Educational Resource</legend>
 
             <label for="resource_title">Resource Title:</label><br>
@@ -26,7 +27,10 @@
                 <option value="education">Education</option>
             </select><br><br>
             <input type="submit" name="submit" value="Add Resource">
+            
         </fieldset>
+        
     </form>
+    <a href="home.php"><button>Return Home</button></a>
 </body>
 </html>

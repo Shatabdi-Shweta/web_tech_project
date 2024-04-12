@@ -5,6 +5,8 @@
 <html lang="en">
 <head>
     <title>Home</title>
+    <link rel="stylesheet" href="../assets/CSS/home_style.css">
+
 </head>
 <body>
     <h1>Welcome Home! </h1> 

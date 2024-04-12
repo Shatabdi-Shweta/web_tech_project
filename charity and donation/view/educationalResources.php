@@ -11,8 +11,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educational Resources</title>
+    <link rel="stylesheet" href="../assets/CSS/style.css">
 </head>
 <body>
+    <fieldset class="field">
     <a href="addResource.php">Add Educational Resource</a>
     <br><br><br>
     
@@ -25,5 +27,6 @@
         
     <?php } ?>
     <a href="home.php"><button>Return Home</button></a>
+    </fieldset>
 </body>
 </html>

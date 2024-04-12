@@ -6,10 +6,11 @@
 <html lang="en">
 <head>
     <title>Edit Donor</title>
+    <link rel="stylesheet" href="../assets/CSS/style.css">
 </head>
 <body>
         <form action="../controller/editDonorController.php" method="post">
-            <fieldset>
+            <fieldset class="field">
             Serial: <input type="number" name='serial' value="<?=$SL?>"/> <br>
             Donor_name: <input type="text" name='donor_name' value=""/> <br>
             Recent_donation: <input type="number" name='recent_donation' value=""/> <br>
